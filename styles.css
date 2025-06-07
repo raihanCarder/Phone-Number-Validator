@@ -1,0 +1,148 @@
+:root {
+    --header-text-color: #f9fafb;
+    --header-background-color: #111827;
+    --main-background-color: #1f2937;
+    --results-background-color: #374151;
+    --button-color: #60a5fa;
+    --main-text: #f9fafb;
+    --error-text: #f87171;
+    --valid-text: #34d399;
+}
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Header Section*/
+body {
+    background-color: var(--main-background-color);
+
+}
+
+.header-div {
+    text-align: center;
+    background-color: var(--header-background-color);
+    color: var(--header-text-color);
+    padding: 10px;
+    height: 100px;
+}
+
+h1 {
+    font-size: 45px;
+    margin-top: 3px;
+}
+
+#under-title {
+    color: var(--main-text);
+}
+
+/*Main Section*/
+
+.main-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--main-background-color);
+    padding: 10px;
+    height: calc(100vh - 100px);
+    gap: 5px;
+    color: var(--main-text);
+
+}
+
+#text-above-input {
+    font-size: 30px;
+}
+
+#text-under-input {
+    font-size: 12px;
+}
+
+input {
+    font-size: 50px;
+    width: 500px;
+    height: 75px;
+    overflow: hidden;
+    text-align: center;
+}
+
+button {
+    padding: 8px;
+    font-size: 15px;
+    width: 300px;
+    background-color: var(--button-color);
+    border-radius: 40px;
+    font-weight: bold;
+}
+
+/*Results Section*/
+
+.div-results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--results-background-color);
+    padding: 10px;
+    height: 300px;
+    width: 500px;
+    border-radius: 20px;
+}
+
+#feed {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#results-div {
+    overflow-y: auto;
+    height: 300px;
+    line-height: 2;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #3b82f6;
+}
+
+@media (max-width:500px) {
+    input {
+        font-size: 20px;
+        padding: 3px;
+        ;
+        height: 20px;
+        width: 400px;
+    }
+
+    #div-results {
+        width: 300px;
+    }
+
+}
+
+@media (max-width:630px) {
+    h1 {
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+}
+
+@media (max-width:640px) {
+    #under-title {
+        display: none;
+    }
+}
+
+@media (max-width:370px) {
+    h1 {
+        font-size: 30px;
+    }
+}

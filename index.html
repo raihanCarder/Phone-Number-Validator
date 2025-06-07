@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telephone Number Validator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="header-div">
+        <h1>Telephone Number Validator</h1>
+        <p id="under-title">Is your American phone number valid? (Country code: 1)</p>
+    </div>
+    <div class="main-div">
+        <h3 id="text-above-input">Enter a Phone Number:</h3>
+        <input type="text" id="user-input" maxlength="18" placeholder="Ex: 1-226-495-3933">
+        <p id="text-under-input">(Enter any American phone number with/without leading "1".)</p>
+        <button aria-label="check" id="check-btn">Check</button>
+
+        <div id="div-results" class="div-results">
+            <p id="feed">Feed:</p>
+            <p id="results-div"></p>
+        </div>
+        <button aria-label="clear" id="clear-btn">Clear Feed</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
